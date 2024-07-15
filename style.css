@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    user-select: none;
+
+}
+
+html , body{
+    height:100% ;
+    width: 100%;
+}
+#main{
+   height: 100vh;
+   width: 100vw;
+   background-color: #1d1c1b;
+  
+}
+#layout{
+    position: absolute;
+    right: 10vh;
+  
+    top: 30%;
+    height: 280px;
+    width: 280px;
+    background-image: url(2.png);
+    background-size: cover;
+    border: 2px solid white;
+    
+    background-color:rgba(255, 228, 196, 0.502);
+    border-radius: 200%;
+}
+#nav{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 6vh;
+    transition: all .50s ease;
+}
+#nav h3{
+    font-size: 4vh;
+}
+#nav button{
+    padding: 1vh 3vh;
+    background-color: rgba(255, 127, 80, 0.808);
+    border: none;
+    border-radius: 10vh;
+    border: 2px solid transparent;
+    color: #fff;
+    margin-top: 3vh;
+   margin-left: 3vw;
+    
+}
+#nav button:hover{
+    
+    background-color: transparent;
+    border: 2px solid white;
+}
+#nav i{
+    cursor: pointer;
+    z-index: 10001;
+    margin-left: 2vh;
+    display: none;
+}
+#navlinks{
+    display: flex;
+    gap: 3vw;
+    transition: all .6s ease;
+  
+}
+#nav #navlinks a{
+    color: white;
+    font-size: 3vh;
+    display: inline-flex;
+   
+}
+#navlinks a:hover{
+    transform: translateY(-6px);
+}
+#mtext{
+    position: relative;
+}
+#text
+{
+    position: absolute;
+    color: #fff;
+    top: 10vh;
+    left: 25vh;
+    text-shadow: -1px -1px 0px #000 7px 7px 0px #000 9px 9px 0px #00000055;
+}
+#text p span{
+    color: red;
+}
+#text h1{
+    font-size: 4rem;
+}
+#text  h1 span{
+    color: red;
+    font-size: 4rem;
+}
+#text p{
+    width: 60%;
+    font-size: 3vh;
+    font-weight: 100;
+}
+#text h4{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Caveat" , cursive;
+    font-style: oblique;
+    margin-bottom: 1vh;
+}
+#text i{
+    font-size: 3vh;
+    transition: all .6s ease;
+    margin-top: 10px;
+   
+        padding: 4vh 2vh;
+}
+#text i:hover{
+    transform: rotate3d(0 ,0 ,1,360deg);
+    color:rgba(255, 127, 80, 0.808) ;
+}
+#buttons{
+    position: absolute;
+    top: 85vh;
+    left: 25vh;
+    
+   display: flex;
+    gap: 7vh;
+
+}
+#buttons a:nth-child(1){
+    display: inline-block;
+    padding: 1vh 2vh;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    font-size: 2.5vh;
+    color: white;
+    background-color: transparent;
+    border: 2px solid rgba(255, 127, 80, 0.808);
+    box-shadow: 2px 2px rgba(255, 127, 80, 0.358);
+    transition: all .6s ease;
+}
+#buttons a:nth-child(1):hover{
+    background-color: rgba(255, 127, 80, 0.808) ;
+}
+#buttons a{
+    color: #fff;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    padding: 1vh 3vh;
+    font-size: 2.5vh;
+}
+#buttons a:hover{
+    border: 2px solid white;
+    border-radius: 10vh;
+    font-size: 3vh;
+}
+#bottom{
+    color: #fff;
+    position: absolute;
+    left: 60%;
+    transition: all .6s ease;
+    transform: translateY(-50%);
+    bottom: 0;
+}
+
+#bottom i span{
+    font-size: 3vh;
+    font-weight: 400;
+    margin-left: 3vh;
+   
+}
+
+#bottom i:hover{
+    transform: translateY(-7px);
+    color: bisque;
+    font-size: 3vh;
+}
+@media(max-width:1228px){
+    #mtext #text{
+        left: 6vh;
+    }
+    #layout{
+        top: 30%;
+        height: 280px;
+        width: 280px;
+    }
+    #text h4{
+        font-size: 30px;
+    }
+    #nav{
+        padding: 5vh 3vh;
+    }
+    #nav h3{
+        font-size: 3.5vh;
+    }
+    #nav button{
+        margin-top: 0vh;
+        margin-left: 0vh;
+    }
+    #buttons{
+        left: 5vh;
+    }
+    #bottom{
+        bottom: 2vh;
+    }
+    #bottom i{
+        font-size: 3vh;
+    }
+    #text i{
+       margin-top: 20vh;
+    }
+}
+@media(max-width:1055px){
+    #mtext #text{
+        left: 3vh;
+    }
+    #layout{
+        
+        right: 3vh;
+    }
+    #nav h3{
+    font-size: 2.5vh;
+    }
+    #nav  #navlinks a{
+        font-size: 2vh;
+    }
+    #nav button{
+        margin-right: 2vh;
+    }
+    #text h1{
+        font-size: 3rem;
+    }
+    #text h4 {
+        font-size: 26px;
+    }
+    #text p{
+        font-size: 2.8vh;
+    }
+  
+}
+@media(max-width:874px){
+    #layout{
+        right: 30vh;
+        top: 10vh;
+    }
+    #nav{
+        padding: 3vh 3vh
+    }
+    #text{
+        top: 25vh;
+    }
+    #text h1{
+        font-size: 2.5rem;
+    }
+    #text h4 {
+        font-size: 23px;
+    }
+    #text p{
+        font-size: 2.3vh;
+    }
+    #buttons a{
+        padding: 1vh 2vh;
+        font-size: 2vh;
+
+    }
+    #buttons a:nth-child(1){
+        padding: 1vh 1vh;
+    }
+    #buttons {
+        left: 5vh;
+    }
+    #bottom {
+        bottom: 4vh;
+    } 
+    #bottom i span{
+        font-size: 2.5vh;
+    }
+    #bottom i{
+        font-size: 3vh;
+    }
+
+    }
+    @media(max-width:733px){
+        #navlinks{
+         display: none;
+        }
+       
+        #nav i{
+            display: block;
+            font-size: 4vh;
+            padding-right: 3vh;
+        }
+        
+  
+     
+        #nav button{
+            margin-right: -25vh;
+            padding: 1vh 2vh;
+        }
+        #layout{
+            right: 25vh;
+            height: 240px;
+            width: 240px;
+        }
+        #text{
+            top: 22vh;
+        }
+        #text h1{
+            font-size: 2.5rem;
+        }
+        #text h4 {
+            font-size: 23px;
+        }
+        #text p{
+            font-size: 2vh;
+        }
+        #bottom {
+            bottom: 4vh;
+        } 
+        #bottom i span{
+            font-size: 2.5vh;
+        }
+        #bottom i{
+            font-size: 3vh;
+        }
+        #buttons{
+            gap: 2vh;
+        }
+        #buttons a{
+            padding: 1vh 2vh;
+            font-size: 2vh;
+            
+    
+        }
+        #buttons a:nth-child(1){
+            padding: 1vh 1vh;
+            font-size: 2vh;
+        }
+        #buttons {
+            left: 3vh;
+        }
+
+    }
+    @media(max-width:585px){
+        #layout{
+            right: 15vh;
+        }
+        #nav button {
+            margin-right: -15vh;
+            padding: .5vh 1vh;
+        }
+        #nav i{
+        font-size: 3vh;
+        }
+        #text{
+            top: 25vh;
+        }
+        #text h1 span {
+            color: red;
+            font-size: 2.5rem;
+        }
+        #text h1{
+            font-size: 2.5rem;
+        }
+        #text h4{
+            font-size: 22px;
+        }
+        #buttons{
+            gap: 2vh;
+            
+        }
+        #buttons a{
+            padding: 1vh 2vh;
+            font-size: 2vh;
+            
+    
+        }
+        #buttons a:nth-child(1){
+            padding: .8vh .5vh;
+            font-size: 1.5vh;
+            text-align: center;
+        }
+        #buttons {
+            left: 2vh;
+        }
+        #bottom {
+            bottom: 5vh;
+        } 
+        #bottom i span{
+            font-size: 2vh;
+        }
+        #bottom i{
+            font-size: 2.5vh;
+        }
+
+       
+    }
+    @media(max-width:430px){
+        #nav h3 {
+            font-size: 2vh;
+        }
+        #layout{
+            right: 10vh;
+        }
+        #nav button {
+            margin-right: -7vh;
+            padding: .5vh 1vh;
+        }
+        #nav i{
+            padding-right:0vh;
+        }
+        #buttons{
+            top: 93vh;
+         left: 1vh;
+         gap: 1vh;
+        }   #buttons a{
+            padding: .5vh 2vh;
+            font-size: 1.5vh;
+            
+    
+        }
+        #buttons a:nth-child(1){
+            padding: .8vh .5vh;
+            font-size: 1.2vh;
+            text-align: center;
+        }
+        #bottom{
+            bottom: 2vh;
+        }
+        #bottom i span{
+            font-size: 1.5vh;
+        }
+        #bottom i{
+            font-size: 2vh;
+        }
+
+    }
